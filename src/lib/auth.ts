@@ -32,7 +32,5 @@ export const auth = betterAuth({
       ],
     }),
   ],
-  trustedOrigins: [
-    "https://3000-firebase-nodebase-1760493652353.cluster-fbfjltn375c6wqxlhoehbz44sk.cloudworkstations.dev",
-  ],
+  trustedOrigins: ["https://tussal-deftly-ressie.ngrok-free.dev"],
 });
