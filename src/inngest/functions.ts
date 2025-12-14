@@ -10,7 +10,7 @@ import { topologicalSort } from "./utils";
 export const executeWorkflow = inngest.createFunction(
   {
     id: "execute-workflow",
-    retries: 0, // TODO: CHANGE FOR PRODUCTION
+    retries: 0, // TODO: Remove in Production
   },
   {
     event: "workflows/execute.workflow",
