@@ -57,7 +57,7 @@ export const BaseExecutionNode = memo(
         onSettings={onSettings}
       >
         <NodeStatusIndicator variant="border" status={status}>
-          <BaseNode onDoubleClick={onDoubleClick}>
+          <BaseNode status={status} onDoubleClick={onDoubleClick}>
             <BaseNodeContent>
               {typeof Icon === "string" ? (
                 <Image src={Icon} alt={name} width={16} height={16} />
