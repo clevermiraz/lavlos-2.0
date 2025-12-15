@@ -131,7 +131,7 @@ export const OpenAiDialog = ({
               name="credentialId"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Anthropic Credential</FormLabel>
+                  <FormLabel>OpenAI Credential</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}

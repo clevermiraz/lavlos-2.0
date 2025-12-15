@@ -43,7 +43,7 @@ export const anthropicExecutor: NodeExecutor<anthropicData> = async ({
       })
     );
 
-    throw new NonRetriableError("Gemini node: Variable name is missing");
+    throw new NonRetriableError("Anthropic node: Variable name is missing");
   }
 
   if (!data.credentialId) {
@@ -54,7 +54,7 @@ export const anthropicExecutor: NodeExecutor<anthropicData> = async ({
       })
     );
 
-    throw new NonRetriableError("Gemini node: Credential is required");
+    throw new NonRetriableError("Anthropic node: Credential is required");
   }
 
   if (!data.userPrompt) {
@@ -65,7 +65,7 @@ export const anthropicExecutor: NodeExecutor<anthropicData> = async ({
       })
     );
 
-    throw new NonRetriableError("Gemini node: User prompt is missing");
+    throw new NonRetriableError("Anthropic node: User prompt is missing");
   }
 
   const systemPrompt = data.systemPrompt
