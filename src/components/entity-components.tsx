@@ -117,10 +117,7 @@ export const EntitySearch = ({
 }: EntitySearchProps) => {
   return (
     <div className="relative ml-auto">
-      <SearchIcon
-        className="size-3.5 absolute left-3 top-1/2 
-            -translate-y-1/2 text-muted-foreground"
-      />
+      <SearchIcon className="size-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
       <Input
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -246,7 +243,7 @@ export function EntityList<T>({
   }
 
   return (
-    <div className={cn("flex flex-col gap-y-4", className)}>
+    <div className={cn("flex flex-col gap-y-4 mt-4", className)}>
       {items.map((item, index) => (
         <div key={getKey ? getKey(item, index) : index}>
           {renderItem(item, index)}
