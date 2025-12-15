@@ -10,6 +10,7 @@ import { AnthropicDialog, type AnthropicFormValues } from "./dialog";
 
 type AnthropicNodeData = {
   variableName?: string;
+  credentialId?: string;
   systemPrompt?: string;
   userPrompt?: string;
 };
