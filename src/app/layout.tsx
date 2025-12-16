@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Lavlos 2.0",
   description: "One platform. Endless automations",
+  icons: [{ rel: "icon", url: "/potion.png" }],
 };
 
 export default function RootLayout({
