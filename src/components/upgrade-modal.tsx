@@ -3,6 +3,7 @@
 import {
   AlertDialog,
   AlertDialogAction,
+  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
@@ -18,23 +19,21 @@ interface UpgradeModalProps {
 
 export const UpgradeModal = ({ open, onOpenChange }: UpgradeModalProps) => {
   return (
-    <AlertDialog>
+    <AlertDialog open={open} onOpenChange={onOpenChange}>
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>Upgrade to Pro</AlertDialogTitle>
           <AlertDialogDescription>
-            You need an active subscription to perform this action. Upgrade to
-            Pro to unlock all features.
+            You are currently using the free plan. Upgrade to Pro to unlock all
+            features.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
+          <AlertDialogCancel>Cancel</AlertDialogCancel>
           <AlertDialogAction
-            onClick={() => {
-              authClient.checkout({ slug: "lavlos" });
-              onOpenChange(false);
-            }}
+            onClick={() => authClient.checkout({ slug: "lavlos" })}
           >
-            Upgrade Now
+            Upgrade
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>

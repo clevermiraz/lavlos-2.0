@@ -1,1 +1,17 @@
-<svg id="logo-38" width="78" height="32" viewBox="0 0 78 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" class="ccustom" fill="#FF7A00"></path> <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" class="ccompli1" fill="#FF9736"></path> <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" class="ccompli2" fill="#FFBC7D"></path> </svg>
+<svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tech-flow-gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" style="stop-color:#4F46E5" /> <stop offset="100%" style="stop-color:#7C3AED" /> </linearGradient>
+  </defs>
+
+  <g fill="url(#tech-flow-gradient)">
+    <path d="M20 2 L 14 12 H 4 C 1.79 12 0 10.21 0 8 C 0 5.79 1.79 4 4 4 H 16 L 20 2 Z" opacity="0.6"/>
+    <circle cx="4" cy="8" r="2.5" fill="#FFFFFF"/>
+    
+    <path d="M46 2 L 36 22 H 18 L 24 8 H 42 L 46 2 Z" opacity="0.85"/>
+    <circle cx="26" cy="15" r="2.5" fill="#FFFFFF"/>
+
+    <path d="M78 2 L 58 38 H 32 L 42 12 H 74 C 76.21 12 78 10.21 78 8 V 2 Z"/>
+    <circle cx="54" cy="25" r="2.5" fill="#FFFFFF"/>
+  </g>
+</svg>
