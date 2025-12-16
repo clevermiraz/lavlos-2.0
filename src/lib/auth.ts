@@ -42,5 +42,5 @@ export const auth = betterAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     },
   },
-  trustedOrigins: ["https://tussal-deftly-ressie.ngrok-free.dev"],
+  trustedOrigins: ["https://tussal-deftly-ressie.ngrok-free.dev", "https://lavlos.com"],
 });
