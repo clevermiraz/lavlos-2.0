@@ -18,8 +18,8 @@ import {
   ErrorView,
   LoadingView,
 } from "@/components/entity-components";
-import type { Execution } from "@/generated/prisma/client";
-import { ExecutionStatus } from "@/generated/prisma/enums";
+import { ExecutionStatus } from "@/generated/prisma";
+import type { Execution } from "@/generated/prisma";
 import { useSuspenseExecutions } from "../hooks/use-executions";
 import { useExecutionsParams } from "../hooks/use-executions-params";
 

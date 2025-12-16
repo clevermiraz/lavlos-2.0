@@ -24,7 +24,7 @@ import { AddNodeButton } from "./add-node-button";
 
 import "@xyflow/react/dist/style.css";
 import { useSetAtom } from "jotai";
-import { NodeType } from "@/generated/prisma/enums";
+import { NodeType } from "@/generated/prisma";
 import { editorAtom } from "../store/atoms";
 import { ExecuteWorkflowButton } from "./execute-workflow-button";
 

@@ -31,7 +31,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CredentialType } from "@/generated/prisma/enums";
+import { CredentialType } from "@/generated/prisma";
 import { useUpgradeModal } from "@/hooks/use-upgrade-modal";
 import {
   useCreateCredential,

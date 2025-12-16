@@ -22,7 +22,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import { ExecutionStatus } from "@/generated/prisma/enums";
+import { ExecutionStatus } from "@/generated/prisma";
 import { useSuspenseExecution } from "../hooks/use-executions";
 
 const getStatusIcon = (status: ExecutionStatus) => {

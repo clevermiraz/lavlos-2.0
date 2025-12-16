@@ -15,7 +15,7 @@ import {
   ErrorView,
   LoadingView,
 } from "@/components/entity-components";
-import type { Workflow } from "@/generated/prisma/client";
+import type { Workflow } from "@/generated/prisma";
 import { useEntitySearch } from "@/hooks/use-entity-search";
 import { useUpgradeModal } from "@/hooks/use-upgrade-modal";
 import {
